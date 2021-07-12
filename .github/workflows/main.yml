@@ -31,6 +31,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          path: ./week1
+          repository: docker-example/week1
+          tag_with_ref: true
+          tag_with_sha: true
 
       - name: Set up Docker Buildx
         id: buildx
