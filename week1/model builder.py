@@ -14,7 +14,7 @@ data=hl.read_csv('data/winequality-red.csv')
 data=h.replce_with_median(data)
 
 
-
+# Python file creates dummy data for train and test 
 
 # no of categorical columns
 cat = data.select_dtypes(include='O')
